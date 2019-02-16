@@ -512,6 +512,7 @@ main(int argc, char **argv)
 					"LEAF : Leafcoin : f\n"
 					"LMC : LomoCoin : L\n"
 					"LTC : Litecoin : L\n"
+					"MERGE : Merge : M\n"
 					"MGD : MassGrid : M\n"
 					"MMC : Memorycoin : M\n"
 					"MNP : MNPCoin : M\n"
@@ -801,6 +802,14 @@ main(int argc, char **argv)
 					"Generating NLG Address\n");
 					addrtype = 38;
 					privtype = 166;
+					break;
+			}
+			else
+			if (strcmp(optarg, "MERGE")== 0) {
+				fprintf(stderr,
+					"Generating MERGE Address\n");
+					addrtype = 50;
+					privtype = 178;
 					break;
 			}
 			else
